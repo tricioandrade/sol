@@ -69,9 +69,8 @@ const ShortCards = () => {
                                     Sol Net
                                 </Card.Title>
                                 <p className="">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, ullam sed. Sunt,
-                                     voluptatem necessitatibus eum reprehenderit neque odit doloremque 
-                                    tempora voluptas sequi unde ullam totam quos. Quasi deserunt ut tempora?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    tempora voluptas sequi unde ullam totam quos. 
                                 </p>
                             </Card.Body>
                             <Card.Footer className='text-center'>
