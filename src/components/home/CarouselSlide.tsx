@@ -50,8 +50,8 @@ const CarouselSlide = () => {
                             alt={ item.imageAlt } />
                         <Carousel.Caption>
                             <h2>{ item.caption.title }</h2>
-                            <p> { item.caption.text } </p>
-                            <Link to='#' className='btn btn-link float-end'>Saber mais</Link>
+                            <p className='d-sm-none d-lg-block'> { item.caption.text } </p>
+                            <Link to='#' className='btn btn-link'>Saber mais</Link>
                         </Carousel.Caption>
                     </Carousel.Item>
         });
@@ -63,7 +63,7 @@ const CarouselSlide = () => {
             <Carousel  className='mb-0'>
                 { carousel() }    
             </Carousel>
-            <Col lg={12} className='p-0'> <img className='col-12' src={ shadow } /> </Col>
+            <Col lg={12} className='shadow-img'> <img src={ shadow } /> </Col>
         </>
     );
 }

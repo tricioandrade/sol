@@ -10,12 +10,12 @@ const Header = () => {
         {
             text: [ 'Modelo de Abertura de Conta', 'Depósitos', 'Créditos', 'Cartões', 'Serviços', 'Oper. No Estrangeiro', 'Sol Seguros'],
             link: [],
-            icon: 'fa-users',
+            icon: 'fa-user-circle',
         },
         {
             text: [ 'Modelo de Abertura de Conta', 'Depósitos', 'Créditos', 'Cartões', 'Serviços', 'Oper. No Estrangeiro', 'Solnet', 'Sol Seguros'],
             link: [],
-            icon: 'fa-buid',
+            icon: 'fa-building',
         },
         {
             text: [ 'Modelo de Abertura de Conta', 'Depósitos', 'Créditos', 'Cartões', 'Serviços', 'Oper. No Estrangeiro', 'Solnet', 'Sol Seguros'],
@@ -25,7 +25,7 @@ const Header = () => {
         {
             text: [ 'Modelo de Abertura de Conta', 'Depósitos', 'Créditos', 'Cartões', 'Serviços', 'Oper. No Estrangeiro', 'Solnet', 'Sol Seguros'],
             link: [],
-            icon: 'fa-question-mark',
+            icon: 'fa-question-circle',
         }
     ];
 
@@ -33,19 +33,25 @@ const Header = () => {
         return menu.map((title, key1) => {
             return (
                 <>
-                    <NavDropdown key={key1 + 1} title={ title } id="basic-nav-dropdown">
-                        <>
+                    <li key={key1 + 1} className={"nav-item dropdown " + (title === 'Particulares' ?
+                        'active' : '')}>
+                        <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                           <i className={ 'fa ' +  menuDropped1[key1].icon } /> { title }  
+                        </a>
+                        <ul className="dropdown-menu">
                             {
                                 menuDropped1.map(( textLink, key) => {
                                     return (
-                                        <Link className='dropdown-item' key={ key + 1 } to="#action/3.1">{ 
+                                        <li>
+                                            <Link className='dropdown-item' key={ key + 1 } to="#action/3.1">{ 
                                              menuDropped1[key1]?.text[key] 
-                                        }</Link>
+                                            }</Link>
+                                        </li>
                                     )
                                 })
                             }
-                        </>
-                    </NavDropdown>
+                        </ul>
+                    </li>
                 </>
             )
         })
