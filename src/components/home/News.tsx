@@ -6,38 +6,36 @@ import img2 from '../../assets/cards/2.png';
 import img3 from '../../assets/cards/3.png';
 
 
-const ShortCards = () => {
+const News = () => {
 
 
 
 
     return (
-        <>
-            <Container id="shortCards" >
+        <section id='news'>
+            <Container>
                 <Row>
-                    <Col lg={12}><h3 className="section-title">Destaques</h3></Col>
-                    <hr />
+                    <Col lg={12}><h3 className="section-title">Notícias</h3></Col>
+                    <hr/>  
                 </Row>
-                <Row className="d-flex flex-columm align-items-stretch col-sm-12 col-lg-12">
+                <Row className="d-flex flex-columm align-items-stretch col-12">
                         <Card className='col-sm-12 col-lg-3 p-1'>
-                               <img src={ img1 } className='card-image' alt="" />
                             <Card.Body>
-                                <Card.Title className='text-sm-center text-lg-start'>
-                                    Cartão Kumbu
+                                <Card.Title>
+                                    Reclamações
                                 </Card.Title>
                                 <p className="">
-                                    O cartão Pré-Pago da Rede Visa que lhe permite 
-                                    efectuar as suas compras de forma adequada, fácil e segura.
+                                    Banco Sol distinguido como o banco que resolveu 
+                                    o maior número de reclamações em 2019.
                                 </p>
                             </Card.Body>
                             <Card.Footer className='text-left d-grid grap-2 d-md-block'>
-                                <Link to="#" className="btn btn-link text-center">Abrir</Link>
+                                <Link to="#" className="btn btn-link text-center">Ler mais</Link>
                             </Card.Footer>
                         </Card>
                         <Card className='col-sm-12 col-lg-3 p-1'>
-                               <img src={ img2 }  className='card-image' />
                             <Card.Body>
-                                <Card.Title className='text-sm-center text-lg-start'>
+                                <Card.Title>
                                     Microcrédito - Informações Gerais
                                 </Card.Title>
                                 <p className="">
@@ -46,13 +44,12 @@ const ShortCards = () => {
                                 </p>
                             </Card.Body>
                             <Card.Footer className='text-left d-grid grap-2 d-md-block'>
-                                <Link to="#" className="btn btn-link text-center">Abrir</Link>
+                                <Link to="#" className="btn btn-link text-center">Ler mais</Link>
                             </Card.Footer>
                         </Card>
                         <Card className='col-sm-12 col-lg-3 p-1'>
-                               <img src={ img3 }  className='card-image'/>
                             <Card.Body>
-                                <Card.Title className='text-sm-center text-lg-start'>
+                                <Card.Title>
                                     Levantamento Sem Cartão
                                 </Card.Title>
                                 <p className="">
@@ -60,13 +57,12 @@ const ShortCards = () => {
                                 </p>
                             </Card.Body>
                             <Card.Footer className='text-left d-grid grap-2 d-md-block'>
-                                <Link to="#" className="btn btn-link text-center">Abrir</Link>
+                                <Link to="#" className="btn btn-link text-center">Ler mais</Link>
                             </Card.Footer>
                         </Card>
                         <Card className='col-sm-12 col-lg-3 p-1'>
-                               <img src={ img3 }  className='card-image'/>
                             <Card.Body>
-                                <Card.Title className='text-sm-center text-lg-start'>
+                                <Card.Title>
                                     Sol Net
                                 </Card.Title>
                                 <p className="">
@@ -75,12 +71,12 @@ const ShortCards = () => {
                                 </p>
                             </Card.Body>
                             <Card.Footer className='text-left d-grid grap-2 d-md-block'>
-                                <Link to="#" className="btn btn-link text-center">Abrir</Link>
+                                <Link to="#" className="btn btn-link text-center">Ler mais</Link>
                             </Card.Footer>
                         </Card>
                 </Row>
             </Container>
-        </>
+        </section>
     )
 }
-export default ShortCards;
+export default News;

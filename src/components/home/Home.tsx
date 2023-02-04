@@ -1,17 +1,18 @@
-import Header from './Header';
-import Carousel from './CarouselSlide';
 import CarouselSlide from './CarouselSlide';
 import Short from './Short';
 import ShortCards from './ShortCards';
+import News from './News';
+import ContactForm from './ContactForm';
 
 const Home = () => {
 
     return (
         <>
-            <Header />
             <CarouselSlide />
             <ShortCards/>
             <Short/>
+            <News/>
+            <ContactForm/>
         </>
     );
 }
