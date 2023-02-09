@@ -30,15 +30,11 @@ body {
     background: none;
 }
 
-hr {
-    border:2px solid var(--yellow);
 
-}
 
 h2, h3, h4, h5 {
     font-family: var(--roboto);
     text-transform: uppercase;
-    font-weight: bold;
 }
 
 .btn, .btn.btn-link, form .btn {
@@ -231,9 +227,9 @@ a.navbar-brand i {
 #news .card, 
 #shortCards .card .card-footer, 
 #news .card .card-footer {
-    background: none ;
-    border: none !important;
+/*     border: none !important; */
     padding: 0;
+    border:1px solid #eee;
 }
 
 #news .card .card-body,

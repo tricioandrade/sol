@@ -17,7 +17,7 @@ const Short = () => {
                     </Col>
                 </Row>
                 <Row className="d-flex align-items-stretch justify-content-center col-sm-12 col-lg-11 m-auto">
-                    <Card className='col-sm-12 col-lg-4'>
+                    <Card>
                         <Card.Header className="col-12 icon-text">
                             <i className="fa fa-phone-square"/>
                         </Card.Header>

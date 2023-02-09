@@ -19,6 +19,7 @@ const ShortCards = () => {
                     <hr />
                 </Row>
                 <Row className="d-flex flex-columm align-items-stretch col-sm-12 col-lg-12">
+                    <Col sm lg={12}>
                         <Card className='col-sm-12 col-lg-3 p-1'>
                                <img src={ img1 } className='card-image' alt="" />
                             <Card.Body>
