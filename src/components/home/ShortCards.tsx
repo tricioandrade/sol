@@ -1,5 +1,5 @@
 import React  from "react";
-import { Card, Col, Container, Row } from "react-bootstrap";
+import { Accordion, Card, Col, Container, Figure, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import img1 from '../../assets/cards/1.png';
 import img2 from '../../assets/cards/2.png';
@@ -12,76 +12,74 @@ const ShortCards = () => {
 
 
     return (
-        <>
-            <Container id="shortCards" >
-                <Row>
-                    <Col lg={12}><h3 className="section-title">Destaques</h3></Col>
-                    <hr />
-                </Row>
-                <Row className="d-flex flex-columm align-items-stretch col-sm-12 col-lg-12">
-                    <Col sm lg={12}>
-                        <Card className='col-sm-12 col-lg-3 p-1'>
-                               <img src={ img1 } className='card-image' alt="" />
-                            <Card.Body>
-                                <Card.Title className='text-sm-center text-lg-start'>
-                                    Cartão Kumbu
-                                </Card.Title>
-                                <p className="">
-                                    O cartão Pré-Pago da Rede Visa que lhe permite 
-                                    efectuar as suas compras de forma adequada, fácil e segura.
-                                </p>
-                            </Card.Body>
-                            <Card.Footer className='text-left d-grid grap-2 d-md-block'>
-                                <Link to="#" className="btn btn-link text-center">Abrir</Link>
-                            </Card.Footer>
-                        </Card>
-                        <Card className='col-sm-12 col-lg-3 p-1'>
-                               <img src={ img2 }  className='card-image' />
-                            <Card.Body>
-                                <Card.Title className='text-sm-center text-lg-start'>
-                                    Microcrédito - Informações Gerais
-                                </Card.Title>
-                                <p className="">
-                                    Destinado a pequenos empreendedores com baixos ganhos, 
-                                    ou com dificuldades de acesso ao crédito bancário.
-                                </p>
-                            </Card.Body>
-                            <Card.Footer className='text-left d-grid grap-2 d-md-block'>
-                                <Link to="#" className="btn btn-link text-center">Abrir</Link>
-                            </Card.Footer>
-                        </Card>
-                        <Card className='col-sm-12 col-lg-3 p-1'>
-                               <img src={ img3 }  className='card-image'/>
-                            <Card.Body>
-                                <Card.Title className='text-sm-center text-lg-start'>
-                                    Levantamento Sem Cartão
-                                </Card.Title>
-                                <p className="">
-                                Agora já pode fazer levantamento sem cartão
-                                </p>
-                            </Card.Body>
-                            <Card.Footer className='text-left d-grid grap-2 d-md-block'>
-                                <Link to="#" className="btn btn-link text-center">Abrir</Link>
-                            </Card.Footer>
-                        </Card>
-                        <Card className='col-sm-12 col-lg-3 p-1'>
-                               <img src={ img3 }  className='card-image'/>
-                            <Card.Body>
-                                <Card.Title className='text-sm-center text-lg-start'>
-                                    Sol Net
-                                </Card.Title>
-                                <p className="">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                    tempora voluptas sequi unde ullam totam quos. 
-                                </p>
-                            </Card.Body>
-                            <Card.Footer className='text-left d-grid grap-2 d-md-block'>
-                                <Link to="#" className="btn btn-link text-center">Abrir</Link>
-                            </Card.Footer>
-                        </Card>
+        <section id="shortCards" >
+            <Container>
+                <Row className="d-flex align-items-stretch justify-content-center">
+                    <Col lg={12}>
+                        <h4>Lorem, ipsum.</h4>
+                    </Col>
+                    <Col lg={6}>
+                        <Accordion defaultActiveKey="0">
+                            <Accordion.Item eventKey="0">
+                                <Accordion.Header>
+                                    Lorem ipsum dolor sit amet consectetur.
+                                </Accordion.Header>
+                                <Accordion.Body>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                culpa qui officia deserunt mollit anim id est laborum.
+                                </Accordion.Body>
+                            </Accordion.Item>
+                            <Accordion.Item eventKey="1">
+                                <Accordion.Header>
+                                    Lorem ipsum dolor sit amet.
+                                </Accordion.Header>
+                                <Accordion.Body>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                culpa qui officia deserunt mollit anim id est laborum.
+                                </Accordion.Body>
+                            </Accordion.Item>
+                            <Accordion.Item eventKey="2">
+                                <Accordion.Header>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing.
+                                </Accordion.Header>
+                                <Accordion.Body>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                culpa qui officia deserunt mollit anim id est laborum.
+                                </Accordion.Body>
+                            </Accordion.Item>
+                        </Accordion>
+                    </Col>
+                    <Col lg={6} className='row'>
+                        <Figure>
+                            <Figure.Image
+                                width={171}
+                                height={180}
+                                alt="171x180"
+                                src="holder.js/171x180"
+                            />
+                            <Figure.Caption>
+                                Nulla vitae elit libero, a pharetra augue mollis interdum.
+                            </Figure.Caption>
+                        </Figure>
+                    </Col> 
                 </Row>
             </Container>
-        </>
+        </section>
     )
 }
 export default ShortCards;
